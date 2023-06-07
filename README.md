@@ -16,9 +16,15 @@ the loss off of an adversarial image i.e. f(<strong>x_adv}</strong>). The method
 </code>
 
 ## Citation
-<code>
-Bitex will be uploaded once the 2023 CVPR proceedings have been released.
-</code>
+<pre>
+@inproceedings{williams2023black,
+  title={Black-Box Sparse Adversarial Attack via Multi-Objective Optimisation},
+  author={Williams, Phoenix Neale and Li, Ke},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12291--12301},
+  year={2023}
+}
+</pre>
 
 ## Paper
 <code>
