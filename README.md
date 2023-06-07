@@ -22,5 +22,5 @@ Bitex will be uploaded once the 2023 CVPR proceedings have been released.
 
 ## Paper
 <code>
-You can access the paper [here](/CVPR_paper.pdf?raw=true).
+You can access the paper <a href="./CVPR_paper.pdf" download>[here]</a>.
 </code>
