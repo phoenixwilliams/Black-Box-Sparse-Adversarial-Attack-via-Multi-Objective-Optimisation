@@ -129,10 +129,7 @@ def tournament_selection(population, tournament_size):
     parents = []
     while len(parents) < len(population) // 2:
         parent1 = __tournament(population, tournament_size)
-        #parent2 = parent1
-        #while parent1 == parent2:
-        while np.all([pi in parent2.pixels for pi in parent1.pixels]):
-            parent2 = __tournament(population, tournament_size)
+        parent2 = __tournament(population, tournament_size)
 
         parents.append([parent1, parent2])
     return parents
