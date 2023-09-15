@@ -71,19 +71,5 @@ def generate_offspring(parents, pc, pm, all_pixels, zero_prob):
     return children
 
 
-def generate_offspring_(parents, pc, pm, all_pixels, zero_prob):
-    children = []
-    for pi in parents:
-        offspring1, offspring2 = pi[0].copy(), pi[1].copy()
-        mutation(offspring1, pm, all_pixels, zero_prob)
-        mutation(offspring2, pm, all_pixels, zero_prob)
-
-        assert len(np.unique(offspring1.pixels)) == len(offspring1.pixels)
-        assert len(np.unique(offspring2.pixels)) == len(offspring2.pixels)
-        children.extend([offspring1, offspring2])
-
-    return children
-
-
 
 
