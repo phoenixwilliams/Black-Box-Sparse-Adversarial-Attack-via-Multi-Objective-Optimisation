@@ -47,7 +47,7 @@ def crossover(soln1: Solution, soln2: Solution, pc: float):
     # S2 crossover with S1
     # 1. Generate set of different pixels in S2
     delta = np.asarray([pi for pi in range(k) if soln1.pixels[pi] not in soln2.pixels])
-    offspring2 = soln1.copy()
+    offspring2 = soln2.copy()
     if len(delta)>0:
         l = l if l <= len(delta) else len(delta)
         switched_pixels = np.random.choice(delta, size=(l,))
